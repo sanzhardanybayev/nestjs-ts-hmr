@@ -1,0 +1,16 @@
+version: "2.2"
+services:
+  testnode:
+    container_name: teest_nodee
+    image: "node:16.16-alpine"
+    restart: always
+    user: 'root'
+    ports:
+      - "3000:3000"
+    volumes:
+      - './:/usr/src/app'
+      - /app/node_modules
+      - /usr/src/app/node_modules
+    working_dir: /usr/src/app
+    command: "npm run start:dev"
+
