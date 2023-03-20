@@ -9,7 +9,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    const s = 222;
+    const s = 2223222;
 
     return this.appService.getHello();
   }
