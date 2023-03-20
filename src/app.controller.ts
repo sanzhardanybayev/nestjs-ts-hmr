@@ -1,7 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
-const ssss = 22223333;
+const ssss = 333;
+const ssssxa = 23311;
 
 @Controller()
 export class AppController {
@@ -9,7 +10,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    const s = 2223222;
+    const s = 22;
 
     return this.appService.getHello();
   }

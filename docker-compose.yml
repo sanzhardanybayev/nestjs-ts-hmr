@@ -1,8 +1,9 @@
 version: "2.2"
 services:
   testnode:
-    container_name: teest_nodee
-    image: "node:16.16-alpine"
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: always
     user: 'root'
     ports:
